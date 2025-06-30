@@ -4,7 +4,7 @@
   font-weight: 400;
 
   color: #bebebe;
-  background-color: #111111;
+  background-color: #080f1b;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -13,9 +13,10 @@
 }
 
 /* Credit: https://github.com/johnpolacek/animated-gradient-background-generator */
-:root {
+html {
   background: linear-gradient(90deg, #050811, #080f1b, #050811, #080f1b);
   background-size: 240% 240%; 
+  min-height: -webkit-fill-available;
 }
 
 @keyframes gradient-animation {
