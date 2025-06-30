@@ -1,8 +1,11 @@
+import Card from "../components/Card"
+
 const Projects = () => {
     return (
-        <p>
-            projects
-        </p>
+        <div className="content">
+            <hr></hr>
+            <Card />
+        </div>
     )
 }
 

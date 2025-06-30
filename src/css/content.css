@@ -1,0 +1,42 @@
+.content {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 50px;
+}
+
+.content h1, .content h2 {
+    font-family: Helvetica, Arial, sans-serif;
+    margin-bottom: 4px;
+}
+
+.content p {
+    margin-top: 0;
+}
+
+.content li {
+    margin: 10px 0;
+}
+
+.media-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.media-card {
+    max-width: 450px;
+    display: flex;
+    border: #c1b8f9 thin solid;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+
+.media-card:hover {
+    color: black;
+    background-color: #c1b8f9;
+}
+
+.media-card span {
+    font-weight: bold;
+    font-size: 1.1em;
+    padding: 20px;
+}

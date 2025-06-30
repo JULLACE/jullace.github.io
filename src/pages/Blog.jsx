@@ -1,8 +1,9 @@
 const Blog = () => {
     return (
-        <p>
-            wip
-        </p>
+        <div className="content">
+            <hr></hr>
+            <p>wip</p>
+        </div>
     )
 }
 
