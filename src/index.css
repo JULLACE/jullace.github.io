@@ -3,31 +3,30 @@
   line-height: 1.5;
   font-weight: 400;
 
-  color: rgba(255, 255, 255, 0.9);
+  color: #bebebe;
   background-color: #111111;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  
-  height: 100vh;
 }
 
 /* Credit: https://github.com/johnpolacek/animated-gradient-background-generator */
 :root {
-  background: linear-gradient(180deg,#000000,#0a1423,#000000,#0a1423);
-  background-size: 240% 240%;
-  animation: gradient-animation 40s ease infinite;
+  background: linear-gradient(180deg, #050811, #080f1b);
+  background-size: 400% 400%; 
 }
 
 @keyframes gradient-animation {
   0% {
     background-position: 0% 50%;
   }
+
   50% {
     background-position: 100% 50%;
   }
+
   100% {
     background-position: 0% 50%;
   }
@@ -81,26 +80,26 @@
   font-weight: bold;
   font-size: 2.2em;
   line-height: 1.1;
-  color: #d7d7d7;
 }
 
 .nav {
   padding-left: 0;
-  list-style-type: none; 
+  list-style-type: none;
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
 
-.nav li {
+.nav .li, .nav a {
   padding: 5px;
   transition: 0.2s;
   font-weight: bold;
   align-self: flex-start;
-  cursor: pointer;
+  text-decoration: none;
+  color: #d7d7d7;
 }
 
-.nav li:hover {
+.nav .li:hover, .nav a:hover {
   padding: 6px;
   background-color: #c1b8f9;
   color: rgb(23, 23, 23);
