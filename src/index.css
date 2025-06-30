@@ -14,8 +14,8 @@
 
 /* Credit: https://github.com/johnpolacek/animated-gradient-background-generator */
 :root {
-  background: linear-gradient(180deg, #050811, #080f1b);
-  background-size: 400% 400%; 
+  background: linear-gradient(90deg, #050811, #080f1b, #050811, #080f1b);
+  background-size: 240% 240%; 
 }
 
 @keyframes gradient-animation {
@@ -52,9 +52,15 @@
   flex-direction: column;
 }
 
-.items a {
-  width: 220px;
+.subtitle a {
+  text-decoration: none;
+  color: inherit;
 }
+
+.subtitle:hover a {
+  text-decoration: underline;
+}
+
 
 .subtitle {
   color: rgb(59, 76, 93);
@@ -66,7 +72,7 @@
   height: 220px;
   border-radius: 15px;
   box-shadow: rgba(32, 44, 58, 0.3) 0px 1px 2px 0px, rgba(36, 52, 64, 0.15) 0px 1px 3px 1px;
-  transition: 0.2s;
+  transition: 0.1s;
 }
 
 .items img:hover {
@@ -83,6 +89,8 @@
 }
 
 .nav {
+  margin-top: 5px;
+  position: sticky;
   padding-left: 0;
   list-style-type: none;
   display: flex;
@@ -94,7 +102,6 @@
   padding: 5px;
   transition: 0.2s;
   font-weight: bold;
-  align-self: flex-start;
   text-decoration: none;
   color: #d7d7d7;
 }
