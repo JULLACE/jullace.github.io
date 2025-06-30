@@ -10,6 +10,27 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
+  height: 100vh;
+}
+
+/* Credit: https://github.com/johnpolacek/animated-gradient-background-generator */
+:root {
+  background: linear-gradient(180deg,#000000,#0a1423,#000000,#0a1423);
+  background-size: 240% 240%;
+  animation: gradient-animation 40s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 ::selection {
@@ -46,11 +67,12 @@
   height: 220px;
   border-radius: 15px;
   box-shadow: rgba(32, 44, 58, 0.3) 0px 1px 2px 0px, rgba(36, 52, 64, 0.15) 0px 1px 3px 1px;
-  transition: 0.3s;
+  transition: 0.2s;
 }
 
 .items img:hover {
-  translate: 0 -2px;
+  translate: 0px -1px;
+  box-shadow: rgba(32, 44, 58, 0.3) 3px 5px 3px 3px, rgba(36, 52, 64, 0.15) 3px 2px 1px 1px, rgba(36, 52, 64, 0.15) 3px 2px 1px 1px, rgba(36, 52, 64, 0.15) 3px 2px 1px 1px;
 }
 
 .title {
@@ -62,3 +84,24 @@
   color: #d7d7d7;
 }
 
+.nav {
+  padding-left: 0;
+  list-style-type: none; 
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.nav li {
+  padding: 5px;
+  transition: 0.2s;
+  font-weight: bold;
+  align-self: flex-start;
+  cursor: pointer;
+}
+
+.nav li:hover {
+  padding: 6px;
+  background-color: #c1b8f9;
+  color: rgb(23, 23, 23);
+}
