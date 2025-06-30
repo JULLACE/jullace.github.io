@@ -17,6 +17,7 @@ html {
   background: linear-gradient(90deg, #050811, #080f1b, #050811, #080f1b);
   background-size: 240% 240%; 
   min-height: -webkit-fill-available;
+  overscroll-behavior: none
 }
 
 @keyframes gradient-animation {
