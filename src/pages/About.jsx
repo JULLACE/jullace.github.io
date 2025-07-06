@@ -17,24 +17,24 @@ const About = () => {
         <div className="content">
             <hr></hr>
             <h1> who </h1>
-            <p> hi :) 
+            <p> hi i'm julio! :) 
                 <br /> 
                 <br />
                 i'm a software engineer 
-                (mainly fullstack) from Florida
+                (mainly fullstack) from America
                 who enjoys exploring the world and
-                realizing how little i know!
+                trying to create for it!
                 <br />
                 <br />
-                some random fun facts:
+                my hobbies include:
                 <ul>
-                    <li> studied abroad in japan twice </li>
-                    <li> loves to play basketball, but sucks at it </li>
-                    <li> goes on random video editing sprees </li>
-                    <li> wants to form an ultimate retro game collection </li>
+                    <li> studying japanese (studied abroad twice!) </li>
+                    <li> exploring new music </li>
+                    <li> video editing </li>
                 </ul>
             </p>
             <h1> follow / contact </h1>
+            feel free to hit me up on:
             <ol className='nav'>
                 <li>
                     <a href="https://www.linkedin.com/in/llanesj/">linkedin</a>

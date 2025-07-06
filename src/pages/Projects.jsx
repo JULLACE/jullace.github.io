@@ -4,7 +4,7 @@ const Projects = () => {
     return (
         <div className="content">
             <hr></hr>
-            <Card />
+            ⚠️ wip ⚠️
         </div>
     )
 }

@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom"
+import { HashRouter, Routes, Route } from "react-router-dom"
 
 import Layout from "./pages/Layout"
 import About from "./pages/About"
@@ -9,7 +9,7 @@ const App = () => {
   return (
     <div className='main'>
       <div className='items'>
-        <BrowserRouter>
+        <HashRouter>
           <Routes>
             <Route path="/" element={<Layout />}>
               <Route path="about" element={<About />} />
@@ -17,7 +17,7 @@ const App = () => {
               <Route path="blog" element={<Blog />} />
             </Route>
           </Routes>
-        </BrowserRouter>
+        </HashRouter>
       </div>
     </div>
   )
