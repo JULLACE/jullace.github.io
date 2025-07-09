@@ -5,7 +5,7 @@ import '../css/content.css'
 const Layout = () => {
   return (
     <>
-      <Link to='/about'><img src={pfp} /></Link>
+      <Link to='/about'><img id='main-pic' src={pfp} /></Link>
       <span className='subtitle'>
         <a href='https://dreamcatalogue.bandcamp.com/album/rain-temple'>
           From Rain Temple by 2814, <br></br> a favorite of mine

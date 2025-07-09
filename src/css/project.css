@@ -1,0 +1,11 @@
+.p-card img {
+    width: 100%;
+    max-height: 50%;
+}
+
+.p-card {
+    color: rgb(23, 23, 23);
+    background-color: #a597ff;
+    border: white solid thin;
+    border-radius: 5px;
+}
