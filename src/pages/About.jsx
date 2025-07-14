@@ -4,13 +4,13 @@ const About = () => {
 
     const doClick = () => {
         navigator.clipboard.writeText('julio.llanesc@gmail.com')
-        const tooltip = document.getElementById("myTooltip");
-        tooltip.innerHTML = "Copied"
+        const tooltip = document.getElementById("myTooltip")
+        tooltip.innerHTML = 'Copied'
     }
 
     const outFunc = () => {
-        var tooltip = document.getElementById("myTooltip");
-        tooltip.innerHTML = "Copy to clipboard";
+        var tooltip = document.getElementById("myTooltip")
+        tooltip.innerHTML = 'Copy to clipboard'
     }
 
     return (
